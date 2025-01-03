@@ -1,5 +1,5 @@
 *{scroll-behavior: smooth;}
-.HomeSection{height: 110vh;width: 100%;display: flex;align-items: center;align-content: center;justify-content: space-around;background-image:url("../../img/home.jpg");background-repeat: no-repeat;background-size: cover;transition: 1000ms ease-in-out;}
+.HomeSection{height: 110vh;width: 100%;display: flex;align-items: center;align-content: center;justify-content: space-around;background-repeat: no-repeat;background-size: cover;transition: 1000ms ease-in-out;}
 .ImgHome{width: 360px;animation: MoveHomeImg 5s linear infinite;}
 @keyframes MoveHomeImg {0% {transform: translateY(5px);} 
 50% {transform: translateY(-20px);opacity: 1;}
@@ -17,7 +17,7 @@
 .who{text-align: center; color: #ffff;background-color: var(--bgcp);border-top-left-radius: 15px;border-top-right-radius: 15px;border-bottom: 5px solid white;border-right: 5px solid #fff;padding: 5px 10px;width: 260px;font-size: 1.5rem;border-left: 4px solid #fff;}
 /******************************************Responsive Home Start******************************************/
 /******************************************Responsive Home Start******************************************/
-@media (max-width: 700px) {.HomeSection{height: 110vh;width: 100%;display: flex;align-items: center;align-content: center;justify-content: center;flex-direction: column-reverse;background-image:"url('./img/home1.jpg')";background-repeat: no-repeat;background-size: cover;transition: 1000ms ease-in-out;background-color: rgb(13, 50, 83);gap: 4rem;}
+@media (max-width: 700px) {.HomeSection{height: 110vh;width: 100%;display: flex;align-items: center;align-content: center;justify-content: center;flex-direction: column-reverse;background-repeat: no-repeat;background-size: cover;transition: 1000ms ease-in-out;gap: 4rem;}
 .ImgHome{width: 170px;animation: MoveHomeImg 5s linear infinite;}@keyframes MoveHomeImg {0% {transform: translateY(7px);} 50% {transform: translateY(-20px);opacity: 1;}100% {transform: translateY(7px);}}
 .TextHome{text-align: center;display: flex;flex-direction: column;align-items: center;align-content: center;justify-content: center;gap: 25px;width: 260px;}
 .HiHome{font-size: 3rem;margin-top: 10px;}
@@ -27,7 +27,7 @@
 .chooseP{font-size: 20px;}
 .chooseP:hover{font-size: 20px;}}
 @media (min-width: 700px) and (max-width: 1000px) {
-.HomeSection{height: 110vh;width: 100%;display: flex;align-items: center;align-content: center;justify-content: space-around;background-image:"url('./img/home1.jpg')";background-repeat: no-repeat;background-size: cover;transition: 1000ms ease-in-out;background-color: rgb(13, 50, 83);}
+.HomeSection{height: 110vh;width: 100%;display: flex;align-items: center;align-content: center;justify-content: space-around;background-image:"url('./img/home1.jpg')";background-repeat: no-repeat;background-size: cover;transition: 1000ms ease-in-out;}
 .ImgHome{width: 200px;animation: MoveHomeImg 5s linear infinite;}
 @keyframes MoveHomeImg {0% {transform: translateY(7px);} 50% {transform: translateY(-20px);opacity: 1;}100% {transform: translateY(7px);}}
 .TextHome{text-align: center;display: flex;flex-direction: column;align-items: flex-start;justify-content: center;gap: 25px;width: 260px;}
@@ -123,7 +123,11 @@ body{overflow-x: hidden;}
 /******************************************Responsive Section 2 Start******************************************/
 :root{--cssgr1:rgb(226, 245, 231);--cssgr2:rgb(214, 236, 192);--msg:rgb(12 20 13);--prasec:#312E88;--bxsimg:rgba(0, 0, 0, 0.4);--two:rgb(213, 247, 219);--one:rgb(234, 240, 237);}
 .dark-theme{--cssgr1:rgb(33, 27, 27);--cssgr2:rgb(0, 0, 0);--msg:rgb(224, 231, 225);--prasec:rgb(244, 244, 244);--two:rgb(19, 21, 19);--one:rgb(22, 22, 22);}
-body{background-image: url("../../img/home.jpg");}
+body{
+    background: rgb(15,15,54);
+    background: linear-gradient(90deg, rgba(15,15,54,1) 0%, rgba(15,15,89,1) 39%, rgba(6,27,32,1) 100%);
+}
+
 .section-other{width: 90%;margin: 5px auto;height: auto;display: flex;align-items: center;align-content: center;justify-content: space-around;direction: rtl;background: rgb(255,255,255);background: linear-gradient(90deg, var(--cssgr1) 15%, var(--cssgr2) 100%);border-bottom: 5px solid var(--prasec);border-radius: 60px;padding: 30px 20px; }
 .textside{text-align: right;direction: ltr;display: flex;flex-direction: column;align-items: flex-end;align-content: center;width: 50%;justify-content: center;}
 .titleside{font-size: 3.6rem;color: var(--msg);}
