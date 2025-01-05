@@ -47,7 +47,11 @@ setInterval(function(){
     imageHome.style.backgroundImage =  changImageHome[rnd];
 },5000);
 */
-
+var sayy = document.getElementById("sayy");
+sayy.onclick = function(){
+    alert("لم اعمل جروب هقولك ياحبيب أخوك اعمل لي متابعة بس");
+    
+}
 /*
 313392
 263B96
