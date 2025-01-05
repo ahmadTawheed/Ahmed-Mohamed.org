@@ -47,11 +47,19 @@ setInterval(function(){
     imageHome.style.backgroundImage =  changImageHome[rnd];
 },5000);
 */
+var sayy = document.getElementById("sayyy");
+var okk = document.getElementById("ok");
+var mssgg = document.getElementById("mssggc");
 var sayy = document.getElementById("sayy");
-sayy.onclick = function(){
-    alert("لم اعمل جروب هقولك ياحبيب أخوك اعمل لي متابعة بس");
-    
-}
+sayy.onclick = function() {
+    mssgg.style.top = "30%";
+};
+sayyy.onclick = function() {
+    mssgg.style.top = "30%";
+};
+okk.onclick = function() {
+    mssgg.style.top = "-100%";
+};
 /*
 313392
 263B96
